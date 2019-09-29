@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base_px.css">
+    <link rel="stylesheet" href="./css/dl-index.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/captcha.min.js"></script>
+    <script src="./js/sendmsg.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <button style="display: block"><img id="shouye" src="../img/logo.png" alt=""></button>
+        <p><a href="">帮助</a></p>
+    </div>
+    <div class="center">
+        <div class="c-div"><img src="../img/show.jpg" alt=""></div>
+        <div class="login">
+            <div style="width: 400px;height: 35px;line-height: 35px;border-bottom: 1px solid #cbcbcb;">
+                <ul>
+                    <li class="li-change">普通登录</li>
+                    <li>快速登录</li>
+                </ul>
+            </div>
+            <div class="show">
+                <div class="show-all">
+                    <div class="show-l get">
+                        <div style="margin-top: 15px;"><label for=""></label><input name="phonenumber" id="username"
+                                type="text" placeholder="请输入用户名" style="border: solid 1px #cbcbcb;"><span
+                                class="oSpan1 right">用户名不能为空</span>
+                        </div>
+                        <div><label for=""></label><input name="password" id="password" type="password"
+                                placeholder="请输入密码" style="border: solid 1px #cbcbcb;"><span
+                                class="oSpan2 right">密码不正确</span>
+                        </div>
+                        <div class="s-l-dl" style="height: 75px;border: none;margin-top: 20px;">
+                            <a href="">找回密码</a>
+                            <div class="s-l-div"><button id="loginBtn">登 录</button></div>
+                        </div>
+                    </div>
+                    <div class="show-r">
+                        <div class="s-r-div1"><input type="text" placeholder="请输入手机号码" style="width: 230px;"></div>
+                        <button class="check" id="btn-msg">获取短信验证码</button>
+                        <div class="s-r-div2 send">已发送</div>
+                        <div class="s-r-div3 send">正在发送验证码</div>
+                        <div class="s-r-div4" style="height: 50px;">
+                            <input type="text" placeholder="验证码" id="checkA">
+                            <canvas style="width:160;height:45" id="captcha">
+                                <a href="" style="color: black;font-size: 10px">看不清？换一张</a>
+                        </div>
+                        <div class="s-r-div5">验证码不能为空</div>
+                        <div class="s-r-div6"><input id="phonecheck" type="text" placeholder="请输入手机验证码"></div>
+                        <div class="s-l-dl" style="height: 75px;border: none;margin-top: 90px;">
+                            <div class="s-l-div"><button id="loginBtn">登 录</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="s-l-div2"></div>
+                <div style="width: 360px;height: auto;margin: 10px auto;">
+                    <h2>使用合作网站账号登录凡客</h2>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <h3>凡客 Vancl 登录<span>没有账户免费<button id="zc-now" style="color: #b42025;
+            margin: 0px;">注册</button></span></h3>
+        </div>
+    </div>
+    <div style="height: 119px;width:100%;text-align: center;">
+        <div class="bottom-x">
+            <div class="bottom-div">
+                <p>Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号
+                    出版物经营许可证新出发京批字第直110138号</p>
+                <div>
+                    <div>
+                        <a href=""><img src="../img/jiguan.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+<script src="./js/denglu.js"></script>
+
+</html>

@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.big-box {
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+}
+/* .head-top>span,
+a,
+em {
+    display: block;
+    float: left;
+    color: #808080;
+    line-height: 27px;
+} */
+
+.head-top a{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-top>span{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-center a{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-center span{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-bottom a{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-bottom span{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+
+.cz-div {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.ms-div {
+    width: 1200px;
+    height: 60px;
+    background: #B81B22;
+    margin-top: 45px;
+}
+
+.ms-div a {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.ms-div a h1 {
+    width: 600px;
+    font-size: 38px;
+    float: left;
+    display: block;
+    color: white;
+    line-height: 60px;
+    margin-left: 70px;
+}
+
+.ms-div .m-d-span {
+    float: left;
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.ms-div .m-d-span>em {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background: white;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: red;
+}
+
+.m-d-span span {
+    position: absolute;
+    left: 0px;
+    color: white;
+    font-size: 30px;
+    left: 1047px;
+    top: 8px;
+}
+
+.bottom {
+    height: 282px;
+    border: 1px solid #e0e0e1;
+    left: 0px;
+}
+
+.bottom .b-div1 {
+    /* position: absolute; */
+    width: 1200px;
+    height: 138px;
+    color: green;
+    margin-left: 45px;
+    margin-top: 33px;
+    margin-bottom: 23px;
+}
+
+.bottom .b-d-ul1 li {
+    float: left;
+    width: 370px;
+    height: 138px;
+    border-right: 1px solid #e0e0e1;
+}
+
+.bottom .b-div2 {
+    height: 26px;
+    padding: 17px 0px 40px;
+    background: #f8f8f8;
+    width: 100%;
+    margin: 0;
+}
+
+.bottom .b-div2 li {
+    float: left;
+}
+
+.bottom .b-div2 ul a {
+    color: #727171;
+    font-size: 13px;
+    padding: 0px 70px;
+    line-height: 26px;
+    border-right: 1px solid #dadadb;
+    width: auto;
+    text-align: center;
+    margin-right: 0px;
+}
+
+.b-div1 a {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.b-div1 a p {
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+
+.b-div1 a p img {
+    width: auto;
+    height: auto;
+}
+
+.b-d-p1 p:nth-child(2) {
+    margin: 0px auto;
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: #b81c22;
+    color: #ffffff;
+}
+
+.b-d-p2 p {
+    text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+
+.b-d-p3 p:nth-child(2) {
+    text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+
+
+
+
+
+
+#buy1 {
+    width: 1200px;
+    height: 350px;
+    color: #474747;
+    /* font-weight: bold; */
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+}
+
+#buy1 .buy1-ul {
+    overflow: hidden;
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 1210px;
+}
+
+#buy1 .buy1-ul li {
+    float: left;
+    width: 232px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+#buy1 .buy1-ul div:nth-of-type(1) span {
+    color: black;
+    font-size: 16px;
+}
+
+#buy1 .buy1-ul li div:nth-of-type(2) span:nth-of-type(1) {
+    /* float: left; */
+    display: block;
+    color: #d3d3d3;
+    font-size: 14px;
+    text-decoration: line-through;
+    float: none;
+}
+
+#buy1 .buy1-ul li div:nth-of-type(2) span:nth-of-type(2) {
+    color: #bb2b34;
+    font-size: 16px;
+}
+#buy1 .buy1-ul li div:nth-of-type(2) span:nth-of-type(3){
+    color: black;
+    margin-left: 70px;
+}
+#buy1 .buy1-ul li div:nth-of-type(2) span:nth-of-type(3)>em{
+    font-size: 24px;
+    font-style: normal;
+    color: #bb2b34;
+    font-weight: bolder;
+}
+
+
+#buy2{
+    height: 880px;
+}
+#buy2 .buy2-ul li{
+    width: 270px;
+    height: 425px;
+    float: left;
+    margin-left: 30px;
+}
+#buy3{
+    height: 2800px;
+    margin-top: 30px;
+}
+#buy3 .buy3-ul li{
+    width: 290px;
+    height: 560px;
+    float: left;
+    margin-right: 10px;
+}
+#buy4{
+    position: relative;
+    height: 1050px;
+}
+#buy4 .buy4-ul li{
+    float: left;
+}
+#buy4 .buy4-ul h3{
+    height: 28px;
+    padding: 20px 12px;
+    line-height: 28px;
+    border: 1px solid #e8e7ec;
+    border-top: 0px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    padding-bottom: 35px;
+}
+#buy4 .buy4-ul h3 span{
+    float: right;
+    color: #a10000;
+    font-family: Arial;
+    line-height: 24px;
+    font-size: 14px;
+}
+#buy4 .buy4-ul li:nth-of-type(2){
+    width: 290px;
+    margin: 0 20px 24px 16px;
+}
+#buy4 .buy4-ul li:nth-of-type(3){
+    width: 290px;
+    margin-left: 16px;
+    margin-bottom: 45px;
+}
+#buy4 .buy4-ul li:nth-of-type(4){
+    position: absolute;
+    top: 0px;
+    left: 913px;
+}
+#buy4 .buy4-ul li:nth-of-type(6){
+    margin: 0 20px 24px 16px;
+}
+#buy4 .buy4-ul li:nth-of-type(7){
+    margin-left: 16px;
+}
+#buy4 .buy4-ul li:nth-of-type(8){
+    position: absolute;
+    top: 541px;
+    left: 913px;
+}
+
+#buy5{
+    height: 508px;
+}
+#buy5 .buy5-ul li{
+    float: left;
+    margin-right: 20px;
+}
+#buy5 .buy5-ul li:nth-last-of-type(1){
+    margin-right: 0px;
+}
+#buy5 .buy5-ul h3{
+    height: 28px;
+    padding: 20px 12px;
+    line-height: 28px;
+    border: 1px solid #e8e7ec;
+    border-top: 0px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    padding-bottom: 35px;
+}
+#buy5 .buy5-ul h3 span{
+    float: right;
+    color: #a10000;
+    font-family: Arial;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+#buy6{
+    height: 600px;
+}
+#buy6 .buy6-ul li{
+    float: left;
+}
+#buy6 .buy6-ul li:nth-of-type(1){
+    margin-right: 22px;
+}
+#buy6 .buy6-ul li:nth-of-type(4){
+    margin-right: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.big-box h2{
+    text-align: center;
+    line-height: 50px;
+    margin: 30px 0px;
+    font-family: "Microsoft YaHei";
+    color: #9a9a9a;
+    font-size: 18px;
+}
