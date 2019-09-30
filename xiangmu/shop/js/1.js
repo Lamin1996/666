@@ -6,7 +6,7 @@ $(function () {
             url: "http://127.0.0.1/code/xiangmu/shop/php/getCatData.php",
             dataType: "json",
             success: function (response) {
-                console.log(response[0])
+                // console.log(response[0].goodid)
                 targetData = response;
                 let html = targetData.map((ele) => {
                     return `
@@ -31,7 +31,18 @@ $(function () {
                 }).join("");
                 $(".car-ul").html(html);
                 $(".dele").click(function(){
-                    $(this).parent().parent().remove()
+                    let indexX = $(this).parent().parent().index()
+                    console.log(indexX)
+                    $(this).parent().parent().remove();
+                        console.log("999")
+                        $.ajax({
+                            type: "get",
+                            url: "./php/removeCart.php",
+                            data: "goodid=" + targetData[indexX].goodid,
+                            success: function(response) {
+                                console.log("xxx")
+                            }
+                        });
                 })
                 $(".deleall").click(function(){
                     $(".car-ul").remove()

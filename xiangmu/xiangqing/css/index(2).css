@@ -192,6 +192,18 @@
     line-height: 20px;
     width: 53px;
 }
+.buynow div{
+    float: left;
+    width: 150px;
+    height: 30px;
+    background: rgb(182, 20, 20);
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+
+
 
 .goodname span{
     display: block;
