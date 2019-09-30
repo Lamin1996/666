@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+button{
+    background: none;
+}
+.big-box{
+    width: 980px;
+    margin: 0 auto;
+}
+.top{
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #7A7F89;
+    font-size: 12px;
+}
+.top>button{
+    float: left;
+}
+.top>div{
+    float: right;
+}
+.top div:nth-of-type(1){
+    margin-top: 10px;
+}
+.top div p {
+    margin:10px 30px 0 0;
+    height: 30px;
+}
+.top div:nth-of-type(1) a{
+    color: black;
+}
+.top div:nth-of-type(1) a:hover{
+    color: #a10000;
+}
+.top div a{
+    color: #a10000;
+    margin-top: 10px;
+}
+.thr{
+    margin-top: 10px;
+    height: 28px;
+}
+.thr span{
+    display: block;
+    float: left;
+    background: #ccc;
+    width: 170px;
+    height: 28px;
+    font-size: 12px;
+    margin-right: 5px;
+    line-height: 28px;
+    text-align: center;
+}
+
+
+
+
+
+.car>div{
+    height: 39px;
+    border: 1px solid #ccc;
+    line-height: 39px;
+    font-size: 12px;
+    padding-left: 20px;
+}
+.car>div span{
+    margin-right: 55px;
+}
+.car-ul{
+    border: 1px solid #ccc;
+}
+.pay div{
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    height: 130px;
+    background:#FFFEF5;
+}
+.payX,.last{
+    color: #a10000;
+    font-size:24px; 
+    float: right;
+}
+
+.car-ul li span,button,input{
+    display: block;
+    float: left;
+}
+.car-ul input,button{
+    margin-top: 18px;
+}
+.car-ul li{
+    line-height: 50px;
+    height: 50px;
+    background:#F8F8F8;
+    margin-top: 0px;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.car-ul li img{
+    width: 40px;
+    height: 40px;
+}
+.car-ul li input{
+    width: 20px;
+}
+
+
+
+
+
+
+.foot{
+    height: 100px;
+}
+.foot p {
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,376 @@
+body {
+    /* font-size: 12px; */
+    font-family: "宋体";
+}
+.head-hot span{
+    margin-top: 5px;
+}
+
+.head-top span,
+a,
+em {
+    float: left;
+    color: #808080;
+    line-height: 27px;
+}
+
+/* 列表区域 */
+.more {
+    font-size: 12px;
+    font-family: "宋体";
+}
+.lie-div1 {
+    height: 40px;
+    line-height: 40px;
+}
+
+.lie-div1 .l-d-div1 span {
+    color: #b4b4b4;
+}
+
+.lie-div1 .l-d-div1 a {
+    color: #333;
+    text-decoration: none;
+    margin-top: 7px;
+}
+
+.lie-div1 .l-d-div2 {
+    /* display: inline; */
+    float: right;
+    color: #b4b4b4;
+}
+
+.lie-div1 .l-d-div2 span {
+    color: #a00000;
+    padding: 0px 2px;
+}
+
+
+.lie-div2 {
+    height: 35px;
+}
+
+.l-d2-div1 {
+    height: 35px;
+    border: 1px solid #ccc;
+    border-bottom: 1px dotted #ccc;
+}
+
+.l-d2-div1 em {
+    height: 35px;
+    width: 66px;
+    color: black;
+    line-height: 35px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+
+.l-d2-div1 div {
+    width: 1110px;
+}
+
+.l-d2-div1 div a {
+    padding-left: 20px;
+    margin-top: 4px;
+}
+
+.l-d3-div1 {
+    height: 30px;
+    border-bottom: 2px solid #b81c22;
+}
+
+.l-d3-div1>div span {
+    float: left;
+    line-height: 30px;
+}
+
+.l-d3-div1>a {
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+    background: #b81c22;
+    border: none;
+    padding: 0px 20px;
+}
+
+
+
+
+
+.l-d3-div2 {
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.l-d3-div2 div>ul>li {
+    height: 34px;
+    border: 1px solid #ccc;
+    border-right: none;
+    float: left;
+    border-bottom: none;
+    border-top: none;
+    line-height: 34px;
+    padding: 0px 12px 0px 20px;
+}
+
+.l-d3-div2 div>ul>li>button {
+    margin-top: 5px;
+    background: white;
+}
+
+.l-d-d2-ul li {
+    float: none;
+    width: 66px;
+    height: 34px;
+    /* background: #eee; */
+    padding: 0 10px 0 10px;
+}
+
+.l-d-d2-li {
+    height: 34px;
+}
+
+.l-d-d2-li .l-d-d2-ul li a {
+    padding-top: 5px;
+}
+
+.l-d-d2-li:hover {
+    height: 136px;
+}
+
+.l-d-d2-ul li:hover {
+    background: white;
+}
+
+.l-d3-div2 div input {
+    width: 34px;
+    height: 17px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+.l-d3-div2>span a:hover {
+    color: #B81B22;
+}
+
+
+.bottom {
+    height: 282px;
+    border: 1px solid #e0e0e1;
+    left: 0px;
+}
+
+.bottom .b-div1 {
+    /* position: absolute; */
+    width: 1200px;
+    height: 138px;
+    color: green;
+    margin-left: 45px;
+    margin-top: 33px;
+    margin-bottom: 23px;
+}
+
+.bottom .b-d-ul1 li {
+    float: left;
+    width: 370px;
+    height: 138px;
+    border-right: 1px solid #e0e0e1;
+}
+
+.bottom .b-div2 {
+    height: 26px;
+    padding: 17px 0px 20px;
+    background: #f8f8f8;
+    width: 100%;
+    margin: 0;
+}
+
+.bottom .b-div2 ul a {
+    font-size: 13px;
+    /* width: 48px; */
+    /* height: 30px; */
+    padding: 0px 65px;
+    line-height: 26px;
+    border-right: 1px solid #dadadb;
+    width: auto;
+    text-align: center;
+    margin-right: 0px;
+}
+
+.b-div1 a {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.b-div1 a p {
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+
+.b-div1 a p img {
+    width: auto;
+    height: auto;
+}
+
+.b-d-p1 p:nth-child(2) {
+    margin: 0px auto;
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: #b81c22;
+    color: #ffffff;
+}
+
+.b-d-p2 p {
+    text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+
+.b-d-p3 p:nth-child(2) {
+    text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+
+
+
+
+
+
+.center-ul li {
+    width: 230px;
+    float: left;
+    margin-right: 8px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #727171;
+}
+
+.center-ul li img {
+    width: 228px;
+    height: 228px;
+}
+
+.center-ul li .b-color {
+    border: 1px solid #ccc;
+}
+.center-ul li .b-color:hover{
+    border-color: red;
+}
+.item button{
+    background: white;
+}
+.center-ul li p {
+    width: 230px;
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.center-ul li .title {
+    text-align: center;
+    color: #b81c22;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+.center-ul>li>span{
+    display: block;
+    width: 90px;
+    height: 20px;
+    background: red;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.page {
+    height: 50px;
+    margin-left: 1100px;
+}
+
+
+.page a {
+    display: inline-block;
+    height: 20px;
+    padding: 0 7px;
+    border: #CCC solid 1px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 5px;
+    background: #FFF;
+    line-height: 20px;
+}
+
+.page a:hover {
+    background: #09F;
+    color: #FFF;
+}
+
+.page .active {
+    background: #CCC
+}
+
+.page a:active {
+    opacity: .8
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom-x {
+    width: 980px;
+    height: 79px;
+    display: inline-table;
+    font: 100 12px "宋体";
+    color: #999999;
+    position: relative;
+    /* margin-left: 255px; */
+    padding-top: 15px;
+    margin: 0px auto;
+}
+
+.bottom-div p {
+    margin-bottom: 20xp;
+}
+
+.bottom-div a img {
+    width: 535px;
+    height: 49px;
+    margin-top: 35px;
+}

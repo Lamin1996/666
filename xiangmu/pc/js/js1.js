@@ -228,5 +228,8 @@ $("#zc").click(function(){
 $("#liebiao").click(function(e){
     e.preventDefault();
     window.location.replace("http://127.0.0.1/code/xiangmu/shangpinliebiao/liebiao.html")
+});
+$(".car button").click(function(){
+    window.location.replace("http://127.0.0.1/code/xiangmu/shop/shop.html");
 })
 })

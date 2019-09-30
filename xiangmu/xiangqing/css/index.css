@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+.head-top a{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-top>span{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-center a{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-center .car a{
+    color: white;
+}
+.head-center span{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-bottom a{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head-bottom span{
+    color: #808080;
+    line-height: 27px;
+    float: left;
+    display: block;
+}
+.head{
+    z-index: 100;
+}
+
+
+
+/* CENTER */
+.center{
+    height: 500px;
+}
+
+.c-l-ul{
+    position: relative;
+    /* top: -400px; */
+    transition: 0.5s;
+}
+.c-l-div2{
+    height: 400px;
+    overflow: hidden;
+}
+.c-l-ul li{
+    width: 74px;
+    border: 2px solid #888;
+    margin-bottom: 5px;
+}
+.big-box .changeColor{
+    border: 2px solid red; 
+}
+.c-l-ul li:nth-of-type(5){
+    margin-bottom: 12px;
+}
+.c-l-ul li img{
+    width: 70px;
+    height: 70px;
+}
+#up,#down{
+    display: block;
+    width: 15px;
+    margin-left: 30px;
+}
+#down{
+    transform: rotateZ(-180deg)
+}
+
+.c-r{
+    float: left;
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 402px;
+    height: 402px;
+}
+.c-r-div1 div{
+    position: absolute;
+}
+
+.move{
+    width: 200px;
+    height: 200px;
+    background: #777;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    display: none;
+}
+
+.fangda{
+    width: 400px;
+    height: 400px;
+    background: yellow;
+    position: absolute;
+    left: 636px;
+    border: 2px solid #888;
+    display: none;
+    overflow: hidden;
+}
+.fangda img{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+
+
+.chose{
+    width: 500px;
+    height: 100px;
+}
+.chosecolor{
+    width: 300px;
+    height: 50px;
+}
+.chosecolor li img{
+    width: 36px;
+    height: 36px;
+}
+.chosecolor li {
+    margin-right: 10px;
+    width: 70px;
+    height: 40px;
+    float: left;
+    font-size: 10px;
+    color: black;
+    border: 1px solid #888;
+}
+.chosecolor li:hover{
+    border-color: red;
+}
+.chose div>div{
+    float: left;
+    margin-right: 10px;
+}
+.size {
+    height: 32px;
+}
+.size>div{
+    float: left;
+}
+.size ul li{
+    background: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    color: #333333;
+    cursor: pointer;
+    padding: 0px;
+    float: left;
+    width: 40px;
+    height: 24px;
+    line-height: 22px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.size .changeColor2{
+    border-color: red;
+}
+.size .changeColor3{
+    border: 2px solid red;
+}
+.size button{
+    background: white;
+}
+.number select{
+    height: 20px;
+    line-height: 20px;
+    width: 53px;
+}

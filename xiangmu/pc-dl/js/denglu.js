@@ -25,10 +25,10 @@ $(function(){
             success: function(response) {
                 if (response.status == "success") {
                     alert(response.data.msg);
+                    window.location.replace("http://127.0.0.1/code/xiangmu/pc/1.html")
                 } else {
                     alert(response.data.msg);
                 }
-
             }
         });
     })

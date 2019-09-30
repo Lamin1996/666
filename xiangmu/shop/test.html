@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <style>
+table{
+    margin: 0 auto;
+    width:600px;
+    height: auto;
+   /* border: 1px solid black;*/
+   border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+.btnl,.btnr{
+    border-style: none;
+    outline: none;
+}
+.txt{
+    border-style: none;
+    text-align: center;
+    width: 15px;
+}
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td><button  class="btn">全选</button></td>
+        <td>序号</td>
+        <td>名称</td>
+        <td>价钱</td>
+        <td>数量</td>
+        <td>小计</td>
+        <td>操作</td>
+    </tr>
+    <tr class="trde">
+        <td><input  class="box"type="checkbox"></td>
+        <td>1</td>
+        <td>毛衣</td>
+        <td><span class="price">99</span>￥</td>
+        <td><button class="btnl">-</button><input class="txt" type="text" value="1"><button class="btnr">+</button></td>
+        <td style="width: 150px;" ><span class="smallprice">99</span>￥</td>
+        <td><button class="btndelte">删除</button></td>
+    </tr>
+    <tr class="trde">
+        <td><input  class="box" type="checkbox"></td>
+        <td>2</td>
+        <td>羽毛球</td>
+        <td><span class="price">199</span>￥</td>
+        <td><button class="btnl">-</button><input class="txt"type="text" value="1"><button class="btnr">+</button></td>
+        <td><span class="smallprice">99</span>￥</td>
+        <td><button class="btndelte">删除</button></td>
+    </tr>
+    <tr class="trde">
+        <td><input  class="box"type="checkbox"></td>
+        <td>3</td>
+        <td>运动鞋</td>
+        <td><span class="price">899</span>￥</td>
+        <td><button class="btnl">-</button><input class="txt" type="text" value="1"><button class="btnr">+</button></td>
+        <td><span class="smallprice">899</span>￥</td>
+        <td><button class="btndelte">删除</button></td>
+    </tr>
+    <tr class="trde">
+        <td><input  class="box"type="checkbox"></td>
+        <td>4</td>
+        <td>篮球</td>
+        <td><span class="price">699</span>￥</td>
+        <td><button class="btnl">-</button><input class="txt"type="text" value="1"><button class="btnr">+</button></td>
+        <td><span class="smallprice">699</span>￥</td>
+        <td><button class="btndelte">删除</button></td>
+    </tr>
+    <tr>
+        <td><button class="btnf">反选</button></td>
+        <td colspan="6"><span>总计：<span class="tottal">0</span></span><button class="jiesuan">去结算</button></td>
+    </tr>
+</table>
+<script>
+    var btnleft=document.getElementsByClassName("btnl");
+    var btnright=document.getElementsByClassName("btnr");
+    var txt=document.getElementsByClassName("txt");
+    var price=document.getElementsByClassName("price");
+    var smallprice=document.getElementsByClassName("smallprice");
+    var tottal=document.getElementsByClassName("tottal")[0];
+    var totta=0;
+    var btn=document.getElementsByClassName("btn")[0];
+    var btnf=document.getElementsByClassName("btnf")[0];
+    var box=document.getElementsByClassName("box");
+    var btndelte=document.getElementsByClassName("btndelte");
+    var trde=document.getElementsByClassName("trde");
+    //1.先获取数量的左右按钮
+    //利用for循环来遍历所有按钮
+    for(var i=0;i<btnleft.length;i++){
+        //获得每一个按钮的索引 由于按钮 数量文本框的索引值都是相同的 因而通过索引对索引来改变数量
+        btnleft[i].index=i;
+        btnleft[i].onclick=function(){
+            var val=txt[this.index].value;
+            val--;
+            if(val<=1){
+                val=1;
+            }
+            txt[this.index].value=val;
+            addsmall(this.index);
+            tottalprice();
+        };
+        btnright[i].index=i;
+        btnright[i].onclick=function(){
+            var val=txt[this.index].value;
+            val++;
+            txt[this.index].value=val;
+            addsmall(this.index);
+            tottalprice();
+        };
+        box[i].onclick=function(){//5.当点击box时计算总价
+            tottalprice();
+        };
+        btndelte[i].index=i;
+        btndelte[i].onclick=function(){
+            trde[this.index].remove();//6.删除不要的物品
+            for(var k=0;k<trde.length;k++){
+                trde[k].index=k;
+                btndelte[k].index=k;//更新索引 ：删除一行，索引必须重新赋值
+                
+            }
+        }
+    }
+    //2.通过数量与price来计算小计
+    function addsmall(index){
+         smallprice[index].innerText=(txt[index].value*price[index].innerText)
+    }
+    //3.计算总价 让所有小计相加赋值给totta
+    function tottalprice(){
+        totta=0;
+        for(var i=0;i<smallprice.length;i++){
+            if(box[i].checked){
+                totta+=parseFloat (smallprice[i].innerText);
+            }
+        }
+        tottal.innerText=totta;
+    }
+    //4.全选，反选计算总价
+    btn.onclick=function(){
+      for(var i=0;i<box.length;i++){
+        box[i].checked=true;
+      }
+        tottalprice()
+    };
+    btnf.onclick=function(){
+        for(var i=0;i<box.length;i++){
+            box[i].checked=!box[i].checked;
+        }
+        tottalprice()
+    };
+</script>
+
+<script>
+    document.write("Hello World")
+</script>
+</body>
+</html>

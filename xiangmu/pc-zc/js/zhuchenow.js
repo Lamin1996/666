@@ -136,7 +136,7 @@ $(function(){
                     success: function (response) {
                         if(response.status == "success"){
                             alert(response.data.msg);
-                            // console.log("ssssssssssss")
+                            window.location.replace("http://127.0.0.1/code/xiangmu/pc-dl/dl.html")
                         }else{
                             alert(response.data.msg);
                         }
